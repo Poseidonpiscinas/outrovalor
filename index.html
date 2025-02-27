@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+    <head>
+        <title>outros valores</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <style>
+            *{
+                text-align: center;
+            }
+            body{
+                background-color:white;
+            }
+            .voltar{
+                height: 28px;
+                margin: 0% 0% 0% -88%;
+            }
+            .bandeira{
+                position: absolute;
+                margin: -56px 0 0 70%;
+                height: 80px;
+                transition: 1s;
+            }
+            .bandeira:hover {
+                position: absolute;
+                margin: -16px 0 0 70%;
+                height: 80px;
+                transition: 1s;
+            }
+            h1{
+                margin-top: 69px;
+                text-align: center;
+                color: rgb(43, 42, 42);
+            }
+            h4{
+                text-align: center;
+                color: rgb(43, 42, 42);
+            }
+            div{
+                height: 600px;
+                display: flow-root;
+                margin: -73px -8px 0px -9px;
+                background-image: url(imagens/onda.webp);
+            }
+            div img{
+                height: 300px;
+                border-radius: 20px;
+                border-style: solid;
+                border-width: 0.1px;
+                border-radius: 20px
+            }
+            fieldset{
+                display: inline-flex;
+                width: 100px;
+                border-radius: 20px;
+            }
+            fieldset input{
+                border-radius: 20px;
+                border-style: none;
+            }
+            fieldset button{
+                height: 30px;
+                margin: 0px 0px 0px 20px;
+                color: black;
+                border-style: none;
+                border-radius: 20px;
+                background-color: rgb(255, 255, 255);
+            }
+            fieldset button:hover{
+                color: white;
+                background-color: rgb(75, 75, 75);
+            }
+            .inf{
+                display: inline-grid;
+                margin: 80px 0px;
+                height: 15px;
+            }
+            .direitos {
+                font-size: 9px;
+                text-align: center;
+                margin: -24px 0 1% 0;
+            }
+            
+        </style>
+        <script>
+            function copiar() {
+                var copiado = document.getElementById("idunico").value;
+            
+                if(navigator.clipboard.writeText(copiado));
+                document.getElementById("idbotao").textContent = "Copiado";
+            
+                setInterval(function() {
+                    document.getElementById("idbotao").textContent = "Copiar";
+                },3000
+                );
+            
+                console.log(copiado);
+            }
+        </script>
+        <p><a href="https://poseidonpiscinas.github.io/doacao/"><img alt="botão voltar" src="imagens/voltar pt.webp" class="voltar"></a>
+            <img src="imagens/brasil pt.webp" alt="Brasil" class="bandeira">
+        <div>
+            <h1>Pagina de Pagamento</h1>
+            <h3>Faça o pagamento:</h3>
+            <img src="imagens/outrosvalores.webp" alt="codigo QR">
+        <p>    
+            <fieldset>
+                <legend>Chave de trasferência</legend>
+                <input type="text" name="" id="idunico" value="00020126480014br.gov.bcb.pix0126kayque.cardoso.9@gmail.com5204000053039865802BR5924KAYQUE PERINETTI CARDOSO6009PENAPOLIS62580520SAN2025022721513346350300017br.gov.bcb.brcode01051.0.063047DCA">
+                <button onclick="copiar()" id="idbotao">Copiar</button>
+            </fieldset>
+        </p>
+            <h6 class=direitos>Todos os direitos estão reservados à Poseidon</h6>
+        </div>
+            </body>
+</html>
